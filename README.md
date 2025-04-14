@@ -21,6 +21,29 @@ The process repeats until `m` matches one of the **precomputed G1 roots**, such 
 
 ---
 
+## 🧠 Mathematical Background
+
+This implementation is based on the mathematical framework and reverse transformation formula presented in the following research:
+
+> **Ahmed Al-Absi** (2025).  
+> *A New Perspective on Proving the Collatz Conjecture*.  
+> Zenodo. https://doi.org/10.5281/zenodo.15178879  
+> 📅 Date: 2025-04-09
+
+This code directly implements the reverse tracing logic discussed in the article, specifically using the transformation:
+
+
+
+🔢 The output includes:
+- The G1 root reached
+- The total sum of all `k` values (Σk)
+- Optionally, a trace of all reverse steps
+
+
+Where each `k` is selected to ensure the result remains odd and positive.
+
+---
+
 ## 🚀 Features
 
 ✅ Handles **extremely large integers** (100+ digits) with `num-bigint`  
@@ -44,6 +67,7 @@ Add this to your `Cargo.toml`:
 [dependencies]
 num-bigint = "0.4"
 num-traits = "0.2"
+
 
 output format:
 <value> → k=<step>
