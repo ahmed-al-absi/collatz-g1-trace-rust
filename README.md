@@ -1,6 +1,6 @@
-# 🔁 Collatz Reverse (Rust)
+# 🔁 collatz-g1-trace-rust 
 
-A high-performance Rust implementation for tracing **any odd integer** backward to a known G1 root using a custom reverse **Collatz step formula**. This project is designed for **extreme numeric scale**, supporting numbers with hundreds (or thousands) of digits, and efficiently computes the **cumulative step count** (Σk) with arbitrary precision.
+A high-performance Rust implementation for tracing **any odd integer** forward to a known G1 root using a custom reverse **Collatz step formula**. This project is designed for **extreme numeric scale**, supporting numbers with hundreds (or thousands) of digits, and efficiently computes the **cumulative step count** (Σk) with arbitrary precision.
 
 ---
 
