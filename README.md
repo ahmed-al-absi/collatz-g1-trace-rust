@@ -42,6 +42,15 @@ This code directly implements the reverse tracing logic discussed in the article
 
 Where each `k` is selected to ensure the result remains odd and positive.
 
+
+### 🧪 Massive Input Test (2025-04-17)
+
+- **Input length**: ~1,200 digits  
+- **Reached G1 Root**: 85  
+- **Cumulative Reverse Steps (Σk)**: 71,539  
+- **Log Size**: 78 MB  
+- **Status**: ✅ Successfully reached G1 root using Collatz-g1-trace-rust engine
+
 ---
 
 ## 🚀 Features
