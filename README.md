@@ -67,113 +67,48 @@ Where each `k` is selected to ensure the result remains odd and positive.
 
 ## 🛠️ Requirements
 
-1. Open the Project in GitHub Codespaces
+🚀 Run in GitHub Codespaces
 
-Go to the repository on GitHub.
+Open this repo in GitHub
 
-Click Code → Create Codespace on main.
+Click Code → Create Codespace on main
 
-Wait 20–40 seconds until the web-based VS Code opens.
-
-You now have a full Linux environment with Rust preinstalled.
-
-⚙️ 2. Build & Run the Program
-
-Open the integrated terminal:
+When VS Code opens, open a terminal:
 
 Terminal → New Terminal
+
 [Rust](https://www.rust-lang.org/tools/install) (via `rustup`)
 
-Then run:
+Run the program:
 
-cargo run -- 111
+cargo run 
 
+Or replace 111 with any odd number from let input = "121";
 
-or any odd integer:
+📄 Download the Path File
 
-cargo run -- 27
-cargo run -- 91
-cargo run -- 137
-
-
-💡 Tip: You must include the -- before the number.
-- `num-bigint` and `num-traits` libraries
-
-3. View the Full Reverse Path
-
-After you run a number, the program automatically creates a text file like:
+After running, the program creates:
 
 reverse_path_111.txt
 
 
-This file contains:
+Find it in the left file explorer in Codespaces and click Download.
 
-every intermediate value
+📁 Project Structure
+src/main.rs        → main Rust program
+reverse_path_*.txt → generated path files
+Cargo.toml         → project config
 
-the value of k at each division
+🔧 Input Options
 
-cumulative Σk
-
-and the final G1 root
-
-The terminal will also show:
-
-📄 Path saved to file: reverse_path_111.txt
-
-📥 4. Download the File
-
-In Codespaces:
-
-Look at the file explorer (left side).
-
-Find reverse_path_111.txt.
-
-Right-click → Download.
-
-Save it to your computer.
-
-✏️ 5. Running Without Arguments (Optional)
-
-You can also run:
+Use command line:
 
 cargo run
 
 
-The program will prompt:
+and type the number when asked.
+Terminal → New Terminal
 
-Enter an odd positive integer to reverse-trace to G1:
-
-
-Just type your number and hit Enter.
-
-🧩 6. Project Structure
-collatz-g1-trace-rust/
-    Cargo.toml
-    src/
-        main.rs
-    reverse_path_*.txt   (generated automatically)
-
-🛡️ 7. Requirements
-
-No installation needed.
-Codespaces already includes:
-
-Rust toolchain
-
-Cargo
-
-Linux shell
-
-🔧 8. Modify Input Inside Code (Optional)
-
-Open:
-
-src/main.rs
-
-
-Change:
-
-let input = "111";
 
 
 to your desired number.
