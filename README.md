@@ -67,7 +67,36 @@ Where each `k` is selected to ensure the result remains odd and positive.
 
 ## 🛠️ Requirements
 
-- [Rust](https://www.rust-lang.org/tools/install) (via `rustup`)
+1. Open the Project in GitHub Codespaces
+
+Go to the repository on GitHub.
+
+Click Code → Create Codespace on main.
+
+Wait 20–40 seconds until the web-based VS Code opens.
+
+You now have a full Linux environment with Rust preinstalled.
+
+⚙️ 2. Build & Run the Program
+
+Open the integrated terminal:
+
+Terminal → New Terminal
+[Rust](https://www.rust-lang.org/tools/install) (via `rustup`)
+
+Then run:
+
+cargo run -- 111
+
+
+or any odd integer:
+
+cargo run -- 27
+cargo run -- 91
+cargo run -- 137
+
+
+💡 Tip: You must include the -- before the number.
 - `num-bigint` and `num-traits` libraries
 
 Add this to your `Cargo.toml`:
