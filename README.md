@@ -99,18 +99,84 @@ cargo run -- 137
 💡 Tip: You must include the -- before the number.
 - `num-bigint` and `num-traits` libraries
 
-Add this to your `Cargo.toml`:
+3. View the Full Reverse Path
 
-```toml
-[dependencies]
-num-bigint = "0.4"
-num-traits = "0.2"
+After you run a number, the program automatically creates a text file like:
+
+reverse_path_111.txt
 
 
-output format:
-<value> → k=<step>
-...
+This file contains:
 
+every intermediate value
+
+the value of k at each division
+
+cumulative Σk
+
+and the final G1 root
+
+The terminal will also show:
+
+📄 Path saved to file: reverse_path_111.txt
+
+📥 4. Download the File
+
+In Codespaces:
+
+Look at the file explorer (left side).
+
+Find reverse_path_111.txt.
+
+Right-click → Download.
+
+Save it to your computer.
+
+✏️ 5. Running Without Arguments (Optional)
+
+You can also run:
+
+cargo run
+
+
+The program will prompt:
+
+Enter an odd positive integer to reverse-trace to G1:
+
+
+Just type your number and hit Enter.
+
+🧩 6. Project Structure
+collatz-g1-trace-rust/
+    Cargo.toml
+    src/
+        main.rs
+    reverse_path_*.txt   (generated automatically)
+
+🛡️ 7. Requirements
+
+No installation needed.
+Codespaces already includes:
+
+Rust toolchain
+
+Cargo
+
+Linux shell
+
+🔧 8. Modify Input Inside Code (Optional)
+
+Open:
+
+src/main.rs
+
+
+Change:
+
+let input = "111";
+
+
+to your desired number.
 ## 📄 License
 
 This project is licensed under the Creative Commons BY-NC-ND 4.0 License.  
